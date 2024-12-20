@@ -1,0 +1,131 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color: #4a4a2d;
+}
+
+/* Thanh tìm kiếm */
+.search-box {
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    padding: 8px 15px;
+    max-width: 900px;
+    /* Giới hạn chiều rộng của thanh tìm kiếm */
+    margin: 20px auto;
+    /* Đặt ở giữa với khoảng cách */
+}
+
+/* Ô nhập tìm kiếm chính */
+.search-input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng focus cho ô tìm kiếm */
+.search-input:focus {
+    border-color: #4a4a2d;
+    box-shadow: 0 0 5px rgba(74, 74, 45, 0.5);
+}
+
+/* Placeholder của ô tìm kiếm */
+.search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Nút tìm kiếm */
+.search-button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #4a4a2d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* margin-left: 10px; */
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.search-button i {
+    font-size: 18px;
+}
+
+/* Input filter (Min price, Max price) */
+.filter {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #333;
+    width: 150px;
+    /* Đặt chiều rộng cố định cho các input filter */
+    margin-right: 10px;
+    /* Khoảng cách giữa các ô input */
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi focus vào các ô filter */
+.filter:focus {
+    border-color: #4a4a2d;
+    box-shadow: 0 0 5px rgba(74, 74, 45, 0.5);
+}
+
+/* Placeholder cho các input filter */
+.filter::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Khoảng cách giữa các sản phẩm */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h5 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}

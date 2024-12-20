@@ -1,0 +1,55 @@
+body {
+    background-color: #FFF7EC;
+    /* Màu nền */
+    color: #304109;
+    /* Màu chữ */
+    font-family: Arial, sans-serif;
+}
+
+h3,
+p {
+    color: #304109;
+    /* Màu chữ của tiêu đề và mô tả */
+}
+
+.abc {
+    background-color: #304109;
+    /* Màu nền nút */
+    color: #FFF;
+    /* Màu chữ trên nút */
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2b3a1b;
+    /* Màu khi hover */
+}
+
+img {
+    max-width: 100%;
+    /* Đảm bảo hình ảnh responsive */
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.container .row {
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    margin-bottom: 20px;
+}
+
+strong {
+    color: #304109;
+    /* Màu chữ cho từ "Giá", "Danh mục", "Thương hiệu", v.v. */
+}

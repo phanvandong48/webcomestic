@@ -1,0 +1,99 @@
+/* Reset CSS để xóa bỏ các margin và padding mặc định */
+.container-cart {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Định dạng chung cho toàn bộ trang */
+
+
+/* Tiêu đề trang */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.custom-table th {
+    text-align: center;
+    /* Hoặc giá trị bạn muốn */
+}
+
+
+/* Bảng giỏ hàng */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng các thẻ th trong bảng */
+th {
+    background-color: #4a4a2d;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Định dạng các ô dữ liệu trong bảng */
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Cột hình ảnh sản phẩm */
+td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Cột tổng giá */
+td:last-child {
+    text-align: center;
+}
+
+/* Định dạng nút xóa */
+.remove a {
+    text-decoration: none;
+    color: #4a4a2d;
+    font-weight: bold;
+}
+
+.remove a:hover {
+    color: #c82333;
+}
+
+/* Cột tổng giá của giỏ hàng */
+tr:last-child {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+tr:last-child td {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+tr:last-child td:first-child {
+    text-align: center;
+}
+
+/* Thông báo giỏ hàng trống */
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+}

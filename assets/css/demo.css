@@ -1,0 +1,158 @@
+.t-products {
+    background-color: #D9C2A3;
+    color: #5E4B3C;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.processor,
+.brand,
+.type {
+    background-color: #F5E6D7;
+    margin-top: 5px;
+    border-bottom: 1px solid #E8D6C3;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.product {
+    padding: 15px;
+    background-color: #FFF7EC;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    /* Giới hạn chiều cao cho box sản phẩm */
+    overflow: hidden;
+    /* Đảm bảo mọi thứ nằm gọn trong box */
+    margin-bottom: 20px;
+    /* Khoảng cách giữa các box sản phẩm */
+    flex: 1 1 calc(33.33% - 10px);
+    /* Điều chỉnh chiều rộng mỗi sản phẩm */
+    margin-bottom: 50px;
+    /* Khoảng cách dưới mỗi sản phẩm */
+}
+
+.product img {
+    width: 100%;
+    height: 300px;
+    /* Giới hạn chiều cao ảnh */
+    object-fit: cover;
+    /* Giữ tỉ lệ ảnh và không bị biến dạng */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    /* Khoảng cách giữa ảnh và thông tin sản phẩm */
+}
+
+.product:hover {
+    transform: scale(1.02);
+}
+
+.product .about {
+    margin-top: 12px;
+    text-align: center;
+    flex-grow: 1;
+    /* Đảm bảo nội dung có thể dãn đều trong box */
+    overflow: hidden;
+    /* Đảm bảo nội dung không bị tràn */
+}
+
+.about h5 {
+    font-size: 18px;
+    color: #5E4B3C;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.about span {
+    color: #B5835A;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product .cart-button {
+    margin-top: auto;
+    /* Đặt nút giỏ hàng ở dưới cùng */
+}
+
+.cart-button button {
+    font-size: 14px;
+    color: #FFF7EC;
+    background-color: #B5835A;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cart-button button:hover {
+    background-color: #8C5D45;
+}
+
+.cart-button button:focus,
+button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.product_fav i {
+    line-height: 40px;
+    color: #B5835A;
+    font-size: 16px;
+}
+
+.product_fav {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+.product_fav:hover {
+    background: #B5835A;
+}
+
+.product_fav:hover i {
+    color: #FFF7EC;
+}
+
+.off {
+    position: absolute;
+    left: 65%;
+    top: 6%;
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    line-height: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #B5835A;
+    color: #FFF7EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: #FFF7EC;
+}
+
+.heading h6 {
+    color: #8C5D45;
+    font-weight: bold;
+}

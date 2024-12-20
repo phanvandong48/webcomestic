@@ -1,0 +1,111 @@
+/* Container chứa form đăng nhập */
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Form đăng nhập */
+.login-form {
+    background-color: #fff;
+    /* Form vẫn giữ màu nền trắng */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Tiêu đề form */
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Các nhóm input */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label cho các trường nhập */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Các trường input */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    /* Nền input sáng nhẹ */
+    transition: border-color 0.3s;
+}
+
+/* Hiệu ứng khi focus vào input */
+.form-group input:focus {
+    border-color: #FF8C00;
+    /* Màu cam nhẹ khi focus */
+    background-color: #fff;
+    /* Nền sáng hơn khi focus */
+}
+
+/* Thông báo lỗi */
+.form-group .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Nút đăng nhập */
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #304109;
+    /* Màu cam nhẹ */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hiệu ứng hover cho nút đăng nhập */
+.form-group button:hover {
+    background-color: #e07b00;
+    /* Màu cam tối hơn khi hover */
+}
+
+/* Liên kết đăng ký */
+.login-form div>a {
+    color: #304109;
+    /* Màu cam sáng */
+    text-decoration: none;
+    /* Bỏ gạch dưới */
+    font-size: 14px;
+}
+
+.login-form div>a:hover {
+    color: #FF6347;
+    /* Màu đỏ cam khi hover */
+    text-decoration: underline;
+    /* Gạch dưới khi hover */
+}
+
+/* Responsive cho các màn hình nhỏ */
+@media (max-width: 480px) {
+    .login-form {
+        padding: 20px;
+        width: 90%;
+    }
+}

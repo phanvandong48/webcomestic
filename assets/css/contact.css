@@ -1,0 +1,104 @@
+/* Toàn bộ trang */
+
+
+/* Tiêu đề */
+h2 {
+    color: #304109;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Form liên hệ */
+#contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+/* Nhãn của các trường */
+#contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #304109;
+    font-size: 14px;
+}
+
+/* Các trường nhập liệu */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Các trường nhập liệu khi focus */
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #FF8C00;
+    /* Màu cam khi focus */
+    outline: none;
+}
+
+/* Textarea */
+#contact-form textarea {
+    resize: vertical;
+    /* Cho phép chỉnh kích thước chiều cao */
+    height: 150px;
+}
+
+/* Nút gửi */
+#contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #304109;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Nút gửi hover */
+#contact-form button:hover {
+    background-color: #e07b00;
+    /* Màu cam đậm khi hover */
+}
+
+/* Khu vực thông báo trạng thái */
+#response-message {
+    font-size: 18px;
+}
+
+/* Màu của thông báo thành công */
+#response-message p.success {
+    color: green;
+}
+
+/* Màu của thông báo lỗi */
+#response-message p.error {
+    color: red;
+}
+
+/* Đảm bảo độ rộng khi màn hình nhỏ */
+@media screen and (max-width: 600px) {
+    #contact-form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

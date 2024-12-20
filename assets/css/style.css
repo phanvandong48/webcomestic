@@ -1,0 +1,95 @@
+/* Banner Styling */
+
+
+
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-color: #fdf7e9;
+    /* Màu nền fallback */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    display: flex;
+    /* Thêm display: flex để căn giữa nội dung */
+    flex-direction: column;
+    /* Đảm bảo các phần tử con xếp theo chiều dọc */
+    justify-content: center;
+    /* Căn giữa theo chiều dọc */
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(74, 74, 45, 0.7);
+    /* Màu nền với độ trong suốt */
+    color: #fdf7e9;
+    /* Màu chữ beige nhạt */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner h1 {
+    font-size: 40px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.shop-button {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 15px;
+    /* Giảm padding ngang (chiều rộng) */
+    font-size: 14px;
+    /* Giảm kích thước font */
+    background-color: #4a4a2d;
+    /* Màu xanh olive đậm cho nút */
+    color: #fdf7e9;
+    /* Chữ màu beige nhạt */
+    text-decoration: none;
+    border-radius: 20px;
+    /* Giảm border-radius để nút tròn hơn */
+    transition: background-color 0.3s;
+    border: 2px solid #4a4a2d;
+    width: 150px;
+    /* Tự động điều chỉnh chiều rộng dựa vào nội dung */
+}
+
+.shop-button:hover {
+    background-color: #fdf7e9;
+    /* Nền sáng khi hover */
+    color: #4a4a2d;
+    /* Chữ màu xanh olive đậm */
+    border: 2px solid #fdf7e9;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 400px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .shop-button {
+        font-size: 16px;
+    }
+}

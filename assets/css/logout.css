@@ -1,0 +1,107 @@
+/* Toàn bộ trang */
+
+/* Container chính */
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+
+}
+
+/* Form đăng ký */
+.register-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Tiêu đề */
+.register-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Các nhóm trường nhập liệu */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Nhan đề trường */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Trường nhập liệu */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Màu khi nhập vào */
+.form-group input:focus {
+    border-color: #304109;
+    /* Màu cam khi focus */
+    outline: none;
+}
+
+/* Lỗi */
+.form-group .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Nút đăng ký */
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #304109;
+    /* Màu cam */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Nút đăng ký hover */
+.form-group button:hover {
+    background-color: #e07b00;
+    /* Màu cam đậm khi hover */
+}
+
+/* Liên kết đăng nhập */
+.register-form div>a {
+    color: #304109;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register-form div>a:hover {
+    color: #FF6347;
+    /* Màu đỏ cam khi hover */
+    text-decoration: underline;
+}
+
+/* Đảm bảo độ rộng khi màn hình nhỏ */
+@media screen and (max-width: 600px) {
+    .register-form {
+        padding: 20px;
+        width: 100%;
+    }
+}
